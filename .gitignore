@@ -1,0 +1,6 @@
+venv/
+.idea/
+/src/cogs/__pycache__/
+/src/data/
+/src/hidden.py
+__pycache__/
