@@ -12,10 +12,7 @@ INVITE_LINK = ('https://discord.com/api/oauth2/authorize?'
                'client_id=578039213287538701&permissions=2415919168&'
                'scope=bot%20applications.commands')
 
-CHANGELOG = discord.Embed(
-    title=':woman_technologist: Ivone __{}__'.format(VERSION),
-    description='• TODO',  # TODO
-    color=discord.Color.blue())
+SOURCE = 'https://github.com/Bernardozomer/ivone-bot/'
 
 
 class Colors(enum.Enum):
@@ -23,7 +20,6 @@ class Colors(enum.Enum):
 
     DEFAULT = discord.Color.blue()
     ERROR = discord.Color.red()
-
 
 class Emojis(enum.Enum):
     """Standardize emoji use across the bot."""
@@ -55,3 +51,9 @@ class Emojis(enum.Enum):
     TASKS = ':bookmark:'
 
     OTHER = ':mag:'
+
+
+CHANGELOG = discord.Embed(
+    title=':woman_technologist: Ivone __{}__'.format(VERSION),
+    description=f'Changelog available at: {SOURCE}#changelog',
+    color=Colors.DEFAULT.value)

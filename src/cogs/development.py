@@ -51,24 +51,13 @@ class Development(commands.Cog):
     @commands.command(aliases=['dch'])
     async def devchangelog(self, ctx: Context):
         """Shows to all guilds the latest changelog."""
-        for guild in self.bot.guilds:
+        for guild in data_manager.guilds:
+            try:
+                await guild.announce(embed=constants.CHANGELOG)
 
-            # TODO
-            """
-            if data.guild_config[guild]['changelog'] is True:
-                channel = helpers.skim_channels(guild)
-            elif data.guild_config[guild]['changelog']:
-                channel = self.bot.get_channel(
-                    int(data.guild_config[guild]['changelog']))
-            else:
-                continue
-
-            if channel is not None:
-                await channel.send(embed=helpers.get_changelog()
-                                   .set_footer(
-                    text='Não quer receber este tipo de mensagem, ou prefere outro canal?'
-                         ' Use /receberversao (canal).'))
-            """
+            # Ignore guild if it has been deleted.
+            except commands.errors.CommandInvokeError:
+                pass
 
         await ctx.send(Development.CMD_EXECUTED)
 

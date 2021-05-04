@@ -112,16 +112,17 @@ class Other(commands.Cog):
     )
     async def _info(self, ctx: SlashContext):
         """Show some information about the bot."""
-        # TODO: Add GitHub repo link.
         await ctx.send(embed=discord.Embed(
             title=':information_source: Ivone info',
             description='2019 - 2021, Bernardo Barzotto Zomer.'
-                        '\nBernardo.Barzotto@edu.pucrs.br'
+                        '\nbernardobarzottoz@gmail.com'
                         '\n\n[Click here to invite the bot.]({invite})'
+                        '\nSource code: {src}'
                         '\nIvone {version}'
                         '\ndiscord.py {discordpy}'
                         '\ndiscord-py-slash-command {slash}'
             .format(invite=constants.INVITE_LINK,
+                    src=constants.SOURCE,
                     version=constants.VERSION,
                     discordpy=discord.__version__,
                     slash=discord_slash.__version__),

@@ -7,6 +7,8 @@
 # Works using discord.py and discord-py-slash-command.
 #
 # 2019 - 2021, Bernardo B. Zomer
+#
+# Source code: https://github.com/Bernardozomer/ivone-bot/
 # -------------------------------------------------------------------------------------------------
 
 import os
