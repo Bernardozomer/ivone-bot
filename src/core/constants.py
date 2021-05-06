@@ -4,7 +4,7 @@ import enum
 
 import discord
 
-VERSION = '2.0.0-rc1'
+VERSION = '2.0.0-rc2'
 PREFIX = 'i.'
 # Scopes: bot and applications.commands
 # Bot permissions: Manage Roles, Add Reactions and Use Slash Commands

@@ -1,11 +1,14 @@
 """Developer-only commands."""
 
+import sys
+
 import discord
 from discord.ext import commands
 from discord.ext.commands import Context
 
-from src import constants, checks
-from src.data_management import data_manager
+sys.path.append('..')
+from core import constants, checks
+from core.data_management import data_manager
 
 
 class Development(commands.Cog):

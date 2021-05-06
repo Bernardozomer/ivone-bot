@@ -1,6 +1,7 @@
 """Check if a command is allowed to run."""
 
 import datetime as dt
+import sys
 from datetime import datetime, timezone
 from typing import List
 
@@ -9,8 +10,9 @@ from discord.ext import commands
 from discord.ext.commands import Context
 from discord_slash import SlashContext
 
-from src import hidden, models
-from src.data_management import data_manager
+sys.path.append('..')
+from . import hidden, models
+from .data_management import data_manager
 
 
 def are_there_tasks_due_on_date(team: models.Team, date: dt.date) -> List[models.Task]:

@@ -9,10 +9,11 @@ import discord
 from discord.ext import commands
 from discord_slash import SlashContext
 
-from src import constants, checks
-from src.data_management import data_manager
-from src.utils import dt_utils, iter_utils
-from src.utils.dt_utils import DATE_FORMATS, TIME_FORMATS
+sys.path.append('..')
+from core import constants, checks
+from core.data_management import data_manager
+from utils import dt_utils, iter_utils
+from utils.dt_utils import DATE_FORMATS, TIME_FORMATS
 
 
 class Events(commands.Cog):

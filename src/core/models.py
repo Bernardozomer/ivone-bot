@@ -3,6 +3,7 @@
 import asyncio
 import datetime
 import datetime as dt
+import sys
 from datetime import datetime, timezone, timedelta
 from typing import Any, Dict, List, Optional
 
@@ -12,9 +13,9 @@ from discord.ext import tasks as disc_tasks
 from discord.ext import commands
 from discord_slash import SlashContext
 
-from src import constants
-from src.utils import iter_utils, dt_utils
-
+sys.path.append('..')
+from . import constants
+from utils import iter_utils, dt_utils
 
 class Guild:
     """Represent a Discord guild."""

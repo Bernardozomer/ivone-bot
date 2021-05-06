@@ -1,13 +1,16 @@
 """Miscellaneous commands."""
 
+import sys
+
 import discord
 from discord.ext import commands
 import discord_slash
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option
 
-from src import constants
-from src.hidden import FEEDBACK_CHANNEL_ID
+sys.path.append('..')
+from core import constants
+from core.hidden import FEEDBACK_CHANNEL_ID
 
 
 class Other(commands.Cog):

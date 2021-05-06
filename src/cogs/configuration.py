@@ -1,18 +1,20 @@
 """Customize how the bot behaves in a guild."""
 
 import asyncio
+import sys
 from datetime import timedelta, timezone
 from typing import Dict
+
 
 import discord
 from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option, create_choice
 
-from src import constants, checks, models
-from src.data_management import data_manager
-from src.utils import iter_utils
-
+sys.path.append('..')
+from core import constants, checks, models
+from core.data_management import data_manager
+from utils import iter_utils
 
 class Configuration(commands.Cog):
     """Customize how the bot behaves in a guild."""

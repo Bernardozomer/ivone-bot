@@ -1,6 +1,8 @@
-venv/
-.idea/
+/.vscode/
+/data/
+/venv/
+/src/__pycache__/
 /src/cogs/__pycache__/
-/src/data/
-/src/hidden.py
-__pycache__/
+/src/core/__pycache__/
+/src/core/hidden.py
+/src/utils/__pycache__

@@ -1,5 +1,6 @@
 """Create, delete and show tasks in a team."""
 
+import sys
 from datetime import datetime, timedelta
 
 import discord
@@ -7,10 +8,11 @@ from discord.ext import commands
 from discord_slash import cog_ext, SlashContext
 from discord_slash.utils.manage_commands import create_option, create_choice
 
-from src import constants, checks, models
-from src.data_management import data_manager
-from src.utils import dt_utils, iter_utils
-from src.utils.dt_utils import DATE_FORMATS, TIME_FORMATS
+sys.path.append('..')
+from core import constants, checks, models
+from core.data_management import data_manager
+from utils import dt_utils, iter_utils
+from utils.dt_utils import DATE_FORMATS, TIME_FORMATS
 
 
 class Tasks(commands.Cog):
