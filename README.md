@@ -4,23 +4,25 @@
 
 [Click here to invite her to your server.](https://discord.com/api/oauth2/authorize?client_id=578039213287538701&permissions=2415919168&scope=bot%20applications.commands)
 
-### Changelog:
-#### v2.0.0rc-2 (2021-05-06)
-- Fixed import errors
-
-#### v2.0.0rc-1 (2021-05-03)
-- Switched language to English
-- Converted commands to slash commands
-- Added control roles
-- Added support for multiple teams per user
-- Added more configuration options
-- Changed some nomenclature
-- Added support for different locales (partial) and timezones
-- Restructured the project and data models
-
-> **[Overview](https://github.com/Bernardozomer/ivone-bot#overview) | [Setup](https://github.com/Bernardozomer/ivone-bot#setup) | [License](https://github.com/Bernardozomer/ivone-bot#license)**
+> **[Changelog](https://github.com/Bernardozomer/ivone-bot#changelog) | [Overview](https://github.com/Bernardozomer/ivone-bot#overview) | [Setup](https://github.com/Bernardozomer/ivone-bot#setup) | [License](https://github.com/Bernardozomer/ivone-bot#license)**
 
 ----
+
+## Changelog:
+
+### **v2.0.0 (2021-05-08)**
+- Added:
+    - Added control roles: roles that control what server members can do with the bot
+    - Added support for multiple teams per user
+    - Added more configuration options
+    - Added support for different date and time formats and any timezone
+
+- Changed:
+    - Switched language to English
+    - Converted commands to slash commands
+    - Changed some nomenclature
+    - Restructured the project and data models
+    - Changed the style of the README file a bit
 
 ## Overview
 
@@ -54,6 +56,8 @@ Afterwards, create the /data directory in the project root, where data generated
 Before selfhosting, please ensure that you're following the license. The Ivone bot profile picture isn't included in this source code and should not be used without permission. To avoid confusion, please don't name your instance "Ivone" or something too similar.
 
 Then, to start the bot, simply run /src/main.py.
+
+If you want to contribute to the project, please do!
 
 ## License
 
