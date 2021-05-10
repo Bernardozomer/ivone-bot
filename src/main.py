@@ -13,4 +13,5 @@
 
 from core import bot, hidden
 
-bot.bot.run(hidden.TOKEN)
+if __name__ == '__main__':
+    bot.bot.run(hidden.TOKEN)
