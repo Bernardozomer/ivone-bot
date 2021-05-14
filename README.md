@@ -10,6 +10,10 @@
 
 ## Changelog:
 
+### **v2.0.1 (2021-05-14)**
+- Fixed:
+    - The due time of a task can now be edited 
+
 ### **v2.0.0 (2021-05-08)**
 - Added:
     - Added control roles: roles that control what server members can do with the bot

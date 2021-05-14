@@ -437,8 +437,8 @@ class Team:
         team = Team(role=discord.utils.get(guild.disc_guild_obj.roles, id=int(dict_['role_id'])),
                     notify=dict_['notify'])
 
-        team.tasks = [Task.deserialize(team, task) for task in dict_['tasks']]
         guild.add_team(team)
+        team.tasks = [Task.deserialize(team, task) for task in dict_['tasks']]
         return team
 
 

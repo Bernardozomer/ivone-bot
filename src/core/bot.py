@@ -18,7 +18,6 @@ bot.remove_command('help')
 # Load cogs.
 for filename in os.listdir('src/cogs'):
     if not filename.startswith('__') and filename.endswith('.py'):
-        print(f'cogs.{filename[:-3]}')
         bot.load_extension(f'cogs.{filename[:-3]}')
         print(f'Loaded cog: {filename}')
 print()

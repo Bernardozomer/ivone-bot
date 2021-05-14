@@ -256,7 +256,7 @@ class Tasks(commands.Cog):
                     task.due_datetime = new_due_datetime
 
                 elif attribute == 'due time':
-                    new_due_time = datetime.strptime(new_value, DATE_FORMATS[guild.locale])
+                    new_due_time = datetime.strptime(new_value, TIME_FORMATS[guild.locale])
 
                     new_due_datetime = task.due_datetime.replace(
                         hour=new_due_time.hour, minute=new_due_time.minute)
