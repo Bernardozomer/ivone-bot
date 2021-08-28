@@ -2,7 +2,7 @@
 
 **A task management bot for teams using Discord. Be it at school, work or anywhere else, Ivone keeps you organized.**
 
-[Click here to invite her to your server.](https://discord.com/api/oauth2/authorize?client_id=578039213287538701&permissions=2415919168&scope=bot%20applications.commands)
+**The official instance of the bot is offline and there are no plans of bringing it back. You can still host it yourself or fork the project.**
 
 > **[Changelog](https://github.com/Bernardozomer/ivone-bot#changelog) | [Overview](https://github.com/Bernardozomer/ivone-bot#overview) | [Setup](https://github.com/Bernardozomer/ivone-bot#setup) | [License](https://github.com/Bernardozomer/ivone-bot#license)**
 
